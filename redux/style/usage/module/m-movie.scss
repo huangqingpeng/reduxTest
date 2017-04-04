@@ -1,0 +1,100 @@
+@charset "UTF-8";
+  @font-face {
+    font-family: 'yofont';
+    src:url("/iconfont/iconfont-movie.woff") format("woff"),url("/iconfont/iconfont-movie.ttf") format("truetype");
+  }
+.m-movie{
+  @include flexbox();
+  @include flex-direction(column);
+  height: 100%;
+  width:100%;
+ 
+  header{
+    width: 100%;
+    height: 0.74rem;
+    &:first-child{
+      display:inline-block;
+      width:0.75rem;
+      height: 0.44rem;
+      position: relative;
+      p{
+        font-weight: normal;
+        font-size: 0.12rem;
+        position: absolute;
+        left: 0.13rem;
+        top: 0.18rem;
+        height:0.38rem;
+      }
+      i{
+        width: 0.1rem;
+        height: 0.06rem;
+        position: absolute;
+        left:0.41rem;
+        top:0.19rem;
+      }
+    }
+    >:nth-child(2){
+      position: absolute;
+      left: 1.05rem;
+      top: 0.09rem;
+      display: inline-block;
+      width:1.08rem;
+      height: 0.3rem;
+      border: 3px solid #ff5100;
+      border-radius: 0.3rem;
+      @include flexbox();
+      @include flex-direction();
+      span{
+        font-size: 0.12rem;
+        @include flex();
+        text-align: center;
+        line-height: 0.26rem;
+      }
+      >:nth-child(1){
+        color: #FFFFFF;
+        background: #ff5100;
+        border-bottom-left-radius: 0.1rem;
+        border-top-left-radius: 0.1rem;
+      }
+      >:nth-child(2){
+        color: #ff5100;
+        background: #FFFFFF;
+        border-bottom-right-radius: 0.1rem;
+        border-top-right-radius: 0.1rem;
+      }
+    }
+    >button{
+      width:0.28rem;
+      height:0.24rem;
+      position: absolute;
+      left:3.37rem;
+      top: 0.15rem;
+      i{
+
+      }
+    }
+    >:nth-child(4){
+      width: 100vw;
+      margin-top: 0.5rem;
+      display: inline-block;
+      height: 0.3rem;
+      @include flexbox();
+      @include flex-direction();
+      h3{
+        @include flex();
+        text-align: center;
+        line-height: 0.3rem;
+        font-size: 0.14rem;
+        font-weight: normal;
+      }
+    }
+  }
+  section{
+    @include flex();
+    width: 100%;
+//  overflow: hidden;
+  }
+  
+}
+  
+
